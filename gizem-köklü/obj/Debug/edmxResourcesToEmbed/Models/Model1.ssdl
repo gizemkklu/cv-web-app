@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CvDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="about">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="birthday" Type="datetime" />
+    <Property Name="website" Type="nvarchar" MaxLength="100" />
+    <Property Name="phone" Type="nchar" MaxLength="20" />
+    <Property Name="city" Type="nchar" MaxLength="10" />
+    <Property Name="age" Type="nchar" MaxLength="10" />
+    <Property Name="degree" Type="nchar" MaxLength="10" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="workflow" Type="nchar" MaxLength="10" />
+    <Property Name="experience" Type="int" />
+  </EntityType>
+  <EntityType Name="ilgiler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="projects">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="url" Type="nvarchar(max)" />
+    <Property Name="name" Type="nvarchar" MaxLength="200" />
+    <Property Name="description" Type="nvarchar" MaxLength="300" />
+    <Property Name="diller" Type="nvarchar" MaxLength="50" />
+    <Property Name="filter" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="sertifikalar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="yetenekler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="20" />
+    <Property Name="derece" Type="int" />
+  </EntityType>
+  <EntityContainer Name="CvDbModelStoreContainer">
+    <EntitySet Name="about" EntityType="Self.about" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ilgiler" EntityType="Self.ilgiler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="projects" EntityType="Self.projects" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sertifikalar" EntityType="Self.sertifikalar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="yetenekler" EntityType="Self.yetenekler" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

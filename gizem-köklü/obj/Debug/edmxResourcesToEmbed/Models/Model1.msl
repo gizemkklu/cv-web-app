@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CvDbModelStoreContainer" CdmEntityContainer="CvDbEntities1">
+    <EntitySetMapping Name="about">
+      <EntityTypeMapping TypeName="CvDbModel.about">
+        <MappingFragment StoreEntitySet="about">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="website" ColumnName="website" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="degree" ColumnName="degree" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="workflow" ColumnName="workflow" />
+          <ScalarProperty Name="experience" ColumnName="experience" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="projects">
+      <EntityTypeMapping TypeName="CvDbModel.projects">
+        <MappingFragment StoreEntitySet="projects">
+          <ScalarProperty Name="filter" ColumnName="filter" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="diller" ColumnName="diller" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sertifikalar">
+      <EntityTypeMapping TypeName="CvDbModel.sertifikalar">
+        <MappingFragment StoreEntitySet="sertifikalar">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yetenekler">
+      <EntityTypeMapping TypeName="CvDbModel.yetenekler">
+        <MappingFragment StoreEntitySet="yetenekler">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="derece" ColumnName="derece" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ilgiler">
+      <EntityTypeMapping TypeName="CvDbModel.ilgiler">
+        <MappingFragment StoreEntitySet="ilgiler">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
